@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="08f0358c-d1f8-4f79-9429-da69c899694a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://ws.imap.org.br/siam/nfse.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Nfse.xsd" MetadataType="Schema" ID="a92514fa-b965-4db4-a553-c24764b8ea2d" SourceId="1" SourceUrl="https://ws.imap.org.br/siam/Nfse.svc?xsd=xsd3" />
+    <MetadataFile FileName="Nfse1.xsd" MetadataType="Schema" ID="a6452bdb-469d-4fb7-8f7f-bb97ca27866f" SourceId="1" SourceUrl="https://ws.imap.org.br/siam/Nfse.svc?xsd=xsd2" />
+    <MetadataFile FileName="Nfse2.xsd" MetadataType="Schema" ID="44e82a70-df47-4b7e-a68b-14cdc90397e5" SourceId="1" SourceUrl="https://ws.imap.org.br/siam/Nfse.svc?xsd=xsd1" />
+    <MetadataFile FileName="Nfse3.xsd" MetadataType="Schema" ID="c8f9e3d2-f4d8-4611-96c7-e91eaa4a68e6" SourceId="1" SourceUrl="https://ws.imap.org.br/siam/Nfse.svc?xsd=xsd0" />
+    <MetadataFile FileName="Nfse.wsdl" MetadataType="Wsdl" ID="864287fc-39a7-4cae-889e-fd56ae3e44ec" SourceId="1" SourceUrl="https://ws.imap.org.br/siam/Nfse.svc?wsdl" />
+    <MetadataFile FileName="Nfse.disco" MetadataType="Disco" ID="40c9bb53-e8a7-4c93-af8b-2f18715457f1" SourceId="1" SourceUrl="https://ws.imap.org.br/siam/Nfse.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
