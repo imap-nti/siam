@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<EnviarLoteRpsSincronoEnvio xmlns="https://ws.imap.org.br/siam/nfse.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <LoteRps Id="Lote_2298_21052015_1519" versao="2.01">
+    <NumeroLote>2304</NumeroLote>
+    <CpfCnpj>
+      <Cnpj>12345678901234</Cnpj>
+    </CpfCnpj>
+    <InscricaoMunicipal>71620</InscricaoMunicipal>
+    <QuantidadeRps>1</QuantidadeRps>
+    <ListaRps>
+      <Rps>
+        <InfDeclaracaoPrestacaoServico Id="Declaracao_19001623000107">
+          <Rps Id="RPS_1202">
+            <IdentificacaoRps>
+              <Numero>12</Numero>
+              <Serie>NFSE</Serie>
+              <Tipo>1</Tipo>
+            </IdentificacaoRps>
+            <DataEmissao>2015-05-21</DataEmissao>
+            <Status>1</Status>
+          </Rps>
+          <Competencia>2015-05-21</Competencia>
+          <Servico>
+            <Valores>
+              <ValorServicos>3832.5</ValorServicos>
+              <ValorDeducoes>0</ValorDeducoes>
+              <ValorPis>0</ValorPis>
+              <ValorCofins>0</ValorCofins>
+              <ValorInss>0</ValorInss>
+              <ValorIr>0</ValorIr>
+              <ValorCsll>0</ValorCsll>
+              <OutrasRetencoes>0</OutrasRetencoes>
+              <ValorIss>191.625</ValorIss>
+              <Aliquota>5</Aliquota>
+              <DescontoIncondicionado>0</DescontoIncondicionado>
+              <DescontoCondicionado>0</DescontoCondicionado>
+            </Valores>
+            <IssRetido>2</IssRetido>
+            <ItemListaServico>14.04</ItemListaServico>
+            <CodigoCnae>2212900</CodigoCnae>
+            <Discriminacao>1,00 REF. 275/80R22.5 BUS 100 235 S  SERIE 16825 R$ 383,25|3,00 REPARO COM MANHCAO RAYTACK DIAG 20 - PNEU 275/80R22.5 S </Discriminacao>
+            <CodigoMunicipio>2804805</CodigoMunicipio>
+            <CodigoPais>1058</CodigoPais>
+            <ExigibilidadeISS>1</ExigibilidadeISS>
+            <MunicipioIncidencia>2804805</MunicipioIncidencia>
+          </Servico>
+          <Prestador>
+            <CpfCnpj>
+              <Cnpj>12345678901234</Cnpj>
+            </CpfCnpj>
+            <InscricaoMunicipal>71620</InscricaoMunicipal>
+          </Prestador>
+          <Tomador>
+            <IdentificacaoTomador>
+              <CpfCnpj>
+                <Cnpj>98765432101234</Cnpj>
+              </CpfCnpj>
+            </IdentificacaoTomador>
+            <RazaoSocial>TRANSPORTE TESTE</RazaoSocial>
+            <Endereco>
+              <Endereco>AV TESTE, 510 - SALA 01</Endereco>
+              <Numero>.</Numero>
+              <Complemento>.</Complemento>
+              <Bairro>TESTE</Bairro>
+              <CodigoMunicipio>2800308</CodigoMunicipio>
+              <Uf>BA</Uf>
+              <CodigoPais>1058</CodigoPais>
+              <Cep>12345698</Cep>
+            </Endereco>
+            <Contato>
+              <Telefone>963258741</Telefone>
+              <Email></Email>
+            </Contato>
+          </Tomador>
+          <RegimeEspecialTributacao>6</RegimeEspecialTributacao>
+          <OptanteSimplesNacional>1</OptanteSimplesNacional>
+          <IncentivoFiscal>1</IncentivoFiscal>
+        </InfDeclaracaoPrestacaoServico>
+      </Rps>
+    </ListaRps>
+  </LoteRps>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+      <Reference URI="#Declaracao_19001623000107">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+          <Transform Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <DigestValue>hUsOZrAF3Um9a2tpXfPHtNupxaQ=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>K+HljaZh08Mu9IkKBDr1XXnSuQQODKSVJF//MzPBGnmtIpJYWn3YvUuDDXskSkozDKJkB9HATFCNPYMqi4ExN8yFQQ1grhG9S0v9YfWi6887HpST1oUm7D2JBxQhmJaJFMJiv+6vREeQqr1JzAiCQ0Bu4aIo3TdbAEFNLL0o+wXJxeuS6clA38gRlULwGSwj517zaejxskmViHRdCVJ3nYq91S8eSAcSgNioqFkTyeuVM/AqBs/kCToMujJ1f6iYAq+1/1Ew7Ssy8/a==</SignatureValue>
+    <KeyInfo>
+      <X509Data>
+        <X509Certificate>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</X509Certificate>
+      </X509Data>
+    </KeyInfo>
+  </Signature>
+</EnviarLoteRpsSincronoEnvio>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListaMensagemRetorno xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://siamws.portalimap.org.br/nfse.xsd">
+  <MensagemRetorno>
+    <Codigo>1</Codigo>
+    <Mensagem>
+      O elemento 'ValorIss' é inválido - O valor '191.625' é inválido dep
+      endendo do tipo de dados 'tsValor' - Falha na restrição FractionDigits.
+    </Mensagem>
+    <Correcao>LineNumber: 33 LinePosition: 34</Correcao>
+  </MensagemRetorno>
+</ListaMensagemRetorno>

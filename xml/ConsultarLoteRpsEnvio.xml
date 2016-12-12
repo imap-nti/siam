@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<ConsultarLoteRpsEnvio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://siamws.portalimap.org.br/nfse.xsd">
+  <Prestador>
+    <CpfCnpj>
+      <Cnpj>12345678901234</Cnpj>
+      </CpfCnpj>
+    <InscricaoMunicipal>159159</InscricaoMunicipal>
+  </Prestador>
+  <Protocolo>LT08Li4yPjscuAfNAz13wu2VfPQ=</Protocolo>
+</ConsultarLoteRpsEnvio>
