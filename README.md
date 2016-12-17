@@ -13,5 +13,8 @@
 	<li>
 	<a href="https://github.com/imap-nti/siam/blob/master/net/siam_client/Program.cs">Cliente C# de exemplo para utilização do webservice.</a>
 	</li>
+	<li>
+	<a href="https://github.com/imap-nti/siam/blob/master/java/siam_client/src/siam_client/Siam_client.java">Cliente JAVA de exemplo para utilização do webservice.</a>
+	</li>
 </ul>
 </section>
