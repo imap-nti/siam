@@ -12,16 +12,16 @@ namespace siam_client
             {
                 var xml_rps = File.ReadAllText(@"C:\caminho_para_meu_rps\rps.xml");
 
-                var certificate = new X509Certificate2(@"C:\caminho_para_meu_certificado\certificado.pfx", "password");
+                var certificate = new X509Certificate2(@"C:\caminho_para_meu_certificado\certificado.pfx", "10203055");
 
-                var client = new siam_service.NfseClient();
+                var client = new siam_service.NfseClient("BasicHttpsBinding_INfse");
 
                 client.ClientCredentials.ClientCertificate.Certificate = certificate;
 
-                var result = client.ValidarXml(xml_rps); //<--  Validar XML
+                var result = client.ValidarXml(xml_rps); //<--  Validar RPS
 
-                //var data = client.EnviarLoteRpsSincronoEnvio(xmlString); <--  Enviar
-                //var data = client.ConsultarLoteRpsEnvio(xmlString); <-- Consultar
+                //var result = client.EnviarLoteRpsSincronoEnvio(xmlString); <--  Enviar RPS
+                //var result = client.ConsultarLoteRpsEnvio(xmlString); <-- Consultar RPS
 
                 Console.WriteLine(result.xmlString);
             }
