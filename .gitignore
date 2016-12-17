@@ -1,6 +1,6 @@
-net/.vs
-net/siam_client/bin/
-net/siam_client/obj/
+csharp/.vs
+csharp/siam_client/bin/
+csharp/siam_client/obj/
 java/siam_client/build/
 java/siam_client/dist/
 java/siam_client/nbproject/private/private.properties
