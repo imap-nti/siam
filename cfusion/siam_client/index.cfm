@@ -5,7 +5,7 @@
 		<cfset prop = javaSystem.getProperties()/>
 		<cfset prop.setProperty("javax.net.debug", "ssl")/>
 
-		<!--- iniciando trustStore --->
+		<!--- iniciando trustStore https://docs.microsoft.com/en-us/azure/java-add-certificate-ca-store --->
 		<cfset prop.setProperty("javax.net.ssl.trustStore", "C:/caminho_para_minha_trustStore/cacerts")/>
 		<cfset prop.setProperty("javax.net.ssl.trustStorePassword", "password")/>
 
