@@ -22,12 +22,11 @@
     <MetadataSource Address="http://ws.imap.org.br/siam/nfse.svc?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Nfse.xsd" MetadataType="Schema" ID="a92514fa-b965-4db4-a553-c24764b8ea2d" SourceId="1" SourceUrl="https://ws.imap.org.br/siam/Nfse.svc?xsd=xsd3" />
-    <MetadataFile FileName="Nfse1.xsd" MetadataType="Schema" ID="a6452bdb-469d-4fb7-8f7f-bb97ca27866f" SourceId="1" SourceUrl="https://ws.imap.org.br/siam/Nfse.svc?xsd=xsd2" />
-    <MetadataFile FileName="Nfse2.xsd" MetadataType="Schema" ID="44e82a70-df47-4b7e-a68b-14cdc90397e5" SourceId="1" SourceUrl="https://ws.imap.org.br/siam/Nfse.svc?xsd=xsd1" />
-    <MetadataFile FileName="Nfse3.xsd" MetadataType="Schema" ID="c8f9e3d2-f4d8-4611-96c7-e91eaa4a68e6" SourceId="1" SourceUrl="https://ws.imap.org.br/siam/Nfse.svc?xsd=xsd0" />
-    <MetadataFile FileName="Nfse.wsdl" MetadataType="Wsdl" ID="864287fc-39a7-4cae-889e-fd56ae3e44ec" SourceId="1" SourceUrl="https://ws.imap.org.br/siam/Nfse.svc?wsdl" />
-    <MetadataFile FileName="Nfse.disco" MetadataType="Disco" ID="40c9bb53-e8a7-4c93-af8b-2f18715457f1" SourceId="1" SourceUrl="https://ws.imap.org.br/siam/Nfse.svc?disco" />
+    <MetadataFile FileName="Nfse4.xsd" MetadataType="Schema" ID="62472b52-025a-455b-80a1-3ad9a4303e33" SourceId="1" SourceUrl="http://ws.imap.org.br/siam/Nfse.svc?xsd=xsd3" />
+    <MetadataFile FileName="Nfse41.xsd" MetadataType="Schema" ID="78e5dca7-5281-4441-a1ce-0c1642d8ea71" SourceId="1" SourceUrl="http://ws.imap.org.br/siam/Nfse.svc?xsd=xsd1" />
+    <MetadataFile FileName="Nfse1.wsdl" MetadataType="Wsdl" ID="9329d1bd-cf05-4d9c-b69a-1ecb77128b4b" SourceId="1" SourceUrl="http://ws.imap.org.br/siam/nfse.svc?wsdl" />
+    <MetadataFile FileName="Nfse42.xsd" MetadataType="Schema" ID="c3183500-9127-4c77-bd6e-796afecde17d" SourceId="1" SourceUrl="http://ws.imap.org.br/siam/Nfse.svc?xsd=xsd2" />
+    <MetadataFile FileName="Nfse43.xsd" MetadataType="Schema" ID="4b13f160-c8cf-40a1-b03e-1d819a2e3a38" SourceId="1" SourceUrl="http://ws.imap.org.br/siam/Nfse.svc?xsd=xsd0" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

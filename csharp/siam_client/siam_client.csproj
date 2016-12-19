@@ -50,17 +50,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Service References\siam_service\Nfse.wsdl" />
-    <None Include="Service References\siam_service\Nfse.xsd">
+    <None Include="Service References\siam_service\Nfse1.wsdl" />
+    <None Include="Service References\siam_service\Nfse4.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\siam_service\Nfse1.xsd">
+    <None Include="Service References\siam_service\Nfse41.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\siam_service\Nfse2.xsd">
+    <None Include="Service References\siam_service\Nfse42.xsd">
       <SubType>Designer</SubType>
     </None>
-    <None Include="Service References\siam_service\Nfse3.xsd">
+    <None Include="Service References\siam_service\Nfse43.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="Service References\siam_service\siam_client.siam_service.XMLMessage.datasource">
@@ -72,9 +72,6 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Service References\siam_service\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Service References\siam_service\Nfse.disco" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Service References\siam_service\configuration91.svcinfo" />

@@ -12,7 +12,7 @@ namespace siam_client
             {
                 var xml_rps = File.ReadAllText(@"C:\caminho_para_meu_rps\rps.xml");
 
-                var certificate = new X509Certificate2(@"C:\caminho_para_meu_certificado\certificado.pfx", "10203055");
+                var certificate = new X509Certificate2(@"C:\caminho_para_meu_certificado\certificado.pfx", "password");
 
                 var client = new siam_service.NfseClient("BasicHttpsBinding_INfse");
 
