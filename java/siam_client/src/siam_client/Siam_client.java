@@ -25,10 +25,11 @@ public class Siam_client {
         try {
             System.setProperty("javax.net.debug", "ssl");
 
-            /* iniciando keyStore e trustStore */
+            /* iniciando trustStore https://docs.microsoft.com/en-us/azure/java-add-certificate-ca-store */
             System.setProperty("javax.net.ssl.trustStore", "C:\\caminho_para_minha_trustStore\\cacerts");
             System.setProperty("javax.net.ssl.trustStorePassword", "password");
 
+            /* iniciando keyStore */
             System.setProperty("javax.net.ssl.keyStore", "C:\\caminho_para_minha_keyStore\\certificado.pfx"); // ou ..\\certificado.p12
             System.setProperty("javax.net.ssl.keyStorePassword", "password");
 
