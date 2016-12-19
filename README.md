@@ -16,5 +16,8 @@
 	<li>
 	<a href="https://github.com/imap-nti/siam/blob/master/java/siam_client/src/siam_client/Siam_client.java">Cliente JAVA de exemplo para utilização do webservice.</a>
 	</li>
+	<li>
+	<a href="https://github.com/imap-nti/siam/blob/master/cfusion/siam_client/index.cfm">Cliente ColdFusion de exemplo para utilização do webservice.</a>
+	</li>
 </ul>
 </section>
