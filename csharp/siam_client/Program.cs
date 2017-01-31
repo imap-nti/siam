@@ -20,8 +20,8 @@ namespace siam_client
 
                 var result = client.ValidarXml(xml_rps); //<--  Validar RPS
 
-                //var result = client.EnviarLoteRpsSincronoEnvio(xml_rps); <--  Enviar RPS
-                //var result = client.ConsultarLoteRpsEnvio(xml_rps); <-- Consultar RPS
+                //var result = client.EnviarLoteRpsSincronoEnvio(xml_rps); //<--  Enviar RPS
+                //var result = client.ConsultarLoteRpsEnvio(xml_rps); //<-- Consultar RPS
 
                 Console.WriteLine(result.xmlString);
             }

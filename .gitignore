@@ -1,6 +1,7 @@
 csharp/.vs
 csharp/siam_client/bin/
 csharp/siam_client/obj/
+*.suo
 csharp/siam_client.v12.suo
 java/siam_client/build/
 java/siam_client/dist/
