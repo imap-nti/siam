@@ -25,4 +25,9 @@
 		</ul>
 	</li>
 </ul>
+<hr />
+<h3>Atualizações</h3>
+<p>Para a realização do envio de RPS com "Tomador Estrangeiro", será necessário a substituição da TAG "CpfCnpj" por "DocumentoEstrangeiro" conforme o exemplo abaixo.
+<br />
+<img src="https://github.com/imap-nti/siam/blob/master/tomador-estrangeiro.png"/>
 </section>
