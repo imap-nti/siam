@@ -24,6 +24,7 @@
 			</li>
 		</ul>
 	</li>
+	<li><a href="https://github.com/imap-nti/siam/wiki/lista-de-erros">Lista com erros mais comuns</a></li>
 </ul>
 <hr />
 <h3>Atualizações</h3>
