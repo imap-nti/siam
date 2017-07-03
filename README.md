@@ -25,6 +25,7 @@
 		</ul>
 	</li>
 	<li><a href="https://github.com/imap-nti/siam/wiki/lista-de-erros">Lista com os erros mais comuns.</a></li>
+	<li><a href="https://github.com/imap-nti/siam/wiki/como-testar-seu-certificado">Testando o seu certificado.</a></li>
 </ul>
 <hr />
 <h3>Update</h3>
