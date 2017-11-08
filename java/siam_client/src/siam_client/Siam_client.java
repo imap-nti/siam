@@ -31,7 +31,7 @@ public class Siam_client {
 
             /* iniciando keyStore */
             System.setProperty("javax.net.ssl.keyStore", "C:\\caminho_para_minha_keyStore\\certificado.pfx"); // ou ..\\certificado.p12
-            System.setProperty("javax.net.ssl.keyStorePassword", "10203055");
+            System.setProperty("javax.net.ssl.keyStorePassword", "password");
 
             /* lendo RPS para o envio... */
             String fileText = readAllText("C:\\caminho_para_meu_rps\\rps.xml");
