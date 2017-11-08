@@ -11,6 +11,7 @@
 				<CodigoMunicipio>99999</CodigoMunicipio>
 			</IdentificacaoNfse>
 			<CodigoCancelamento>1</CodigoCancelamento>
+      <MotivoCancelamento>Motivo de cancelamento</MotivoCancelamento>
 		</InfPedidoCancelamento>
 	</Pedido>
 </CancelarNfseEnvio>
