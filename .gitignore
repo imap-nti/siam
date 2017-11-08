@@ -1,13 +1,8 @@
 csharp/.vs
 csharp/siam_client/bin/
 csharp/siam_client/obj/
-*.suo
 csharp/siam_client.v12.suo
+*.suo
 java/siam_client/build/
 java/siam_client/dist/
-java/siam_client/nbproject/private/private.properties
-java/siam_client/src/META-INF/
-java/siam_client/xml-resources/web-service-references/nfse/
-java/siam_client/nbproject/private/private.xml
-csharp/siam_client.v12.suo
-*.suo
+java/siam_client/nbproject/private/
