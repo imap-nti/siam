@@ -5,4 +5,9 @@
     <system systemId="https://ws.imap.org.br/siam/Nfse.svc?xsd=xsd3" uri="wsdl/ws.imap.org.br/siam/Nfse.svc.xsd_xsd3.xsd"/>
     <system systemId="https://ws.imap.org.br/siam/Nfse.svc?xsd=xsd1" uri="wsdl/ws.imap.org.br/siam/Nfse.svc.xsd_xsd1.xsd"/>
     <system systemId="https://ws.imap.org.br/siam/Nfse.svc?xsd=xsd2" uri="wsdl/ws.imap.org.br/siam/Nfse.svc.xsd_xsd2.xsd"/>
+    <system systemId="https://homologacao.imap.org.br/siam/nfse.svc?wsdl" uri="wsdl/homologacao.imap.org.br/siam/nfse.svc.wsdl"/>
+    <system systemId="https://homologacao.imap.org.br/siam/Nfse.svc?xsd=xsd0" uri="wsdl/homologacao.imap.org.br/siam/Nfse.svc.xsd_xsd0.xsd"/>
+    <system systemId="https://homologacao.imap.org.br/siam/Nfse.svc?xsd=xsd3" uri="wsdl/homologacao.imap.org.br/siam/Nfse.svc.xsd_xsd3.xsd"/>
+    <system systemId="https://homologacao.imap.org.br/siam/Nfse.svc?xsd=xsd1" uri="wsdl/homologacao.imap.org.br/siam/Nfse.svc.xsd_xsd1.xsd"/>
+    <system systemId="https://homologacao.imap.org.br/siam/Nfse.svc?xsd=xsd2" uri="wsdl/homologacao.imap.org.br/siam/Nfse.svc.xsd_xsd2.xsd"/>
 </catalog>

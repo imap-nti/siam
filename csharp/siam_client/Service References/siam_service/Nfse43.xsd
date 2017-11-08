@@ -1,46 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import schemaLocation="http://ws.imap.org.br/siam/Nfse.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
-  <xs:element name="EnviarLoteRpsSincronoEnvio">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="param" nillable="true" type="xs:string" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="EnviarLoteRpsSincronoEnvioResponse">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="EnviarLoteRpsSincronoEnvioResult" nillable="true" type="q1:XMLMessage" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="ConsultarLoteRpsEnvio">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="param" nillable="true" type="xs:string" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="ConsultarLoteRpsEnvioResponse">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="ConsultarLoteRpsEnvioResult" nillable="true" type="q2:XMLMessage" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="ValidarXml">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element minOccurs="0" name="param" nillable="true" type="xs:string" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="ValidarXmlResponse">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="ValidarXmlResult" nillable="true" type="q3:XMLMessage" />
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/NfseSvc" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/NfseSvc" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="SiamFault">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Source" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SiamFault" nillable="true" type="tns:SiamFault" />
 </xs:schema>

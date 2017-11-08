@@ -19,14 +19,14 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://ws.imap.org.br/siam/nfse.svc?wsdl" Protocol="http" SourceId="1" />
+    <MetadataSource Address="https://homologacao.imap.org.br/siam/nfse.svc?wsdl" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="Nfse4.xsd" MetadataType="Schema" ID="62472b52-025a-455b-80a1-3ad9a4303e33" SourceId="1" SourceUrl="http://ws.imap.org.br/siam/Nfse.svc?xsd=xsd3" />
-    <MetadataFile FileName="Nfse41.xsd" MetadataType="Schema" ID="78e5dca7-5281-4441-a1ce-0c1642d8ea71" SourceId="1" SourceUrl="http://ws.imap.org.br/siam/Nfse.svc?xsd=xsd1" />
-    <MetadataFile FileName="Nfse1.wsdl" MetadataType="Wsdl" ID="9329d1bd-cf05-4d9c-b69a-1ecb77128b4b" SourceId="1" SourceUrl="http://ws.imap.org.br/siam/nfse.svc?wsdl" />
-    <MetadataFile FileName="Nfse42.xsd" MetadataType="Schema" ID="c3183500-9127-4c77-bd6e-796afecde17d" SourceId="1" SourceUrl="http://ws.imap.org.br/siam/Nfse.svc?xsd=xsd2" />
-    <MetadataFile FileName="Nfse43.xsd" MetadataType="Schema" ID="4b13f160-c8cf-40a1-b03e-1d819a2e3a38" SourceId="1" SourceUrl="http://ws.imap.org.br/siam/Nfse.svc?xsd=xsd0" />
+    <MetadataFile FileName="Nfse4.xsd" MetadataType="Schema" ID="1f5f8af8-2fb6-4dfc-b5bb-61a277ae3bf7" SourceId="1" SourceUrl="https://homologacao.imap.org.br/siam/Nfse.svc?xsd=xsd0" />
+    <MetadataFile FileName="Nfse1.wsdl" MetadataType="Wsdl" ID="416ffaa6-281c-4a9f-af1a-c1de5f24a81f" SourceId="1" SourceUrl="https://homologacao.imap.org.br/siam/nfse.svc?wsdl" />
+    <MetadataFile FileName="Nfse41.xsd" MetadataType="Schema" ID="421cc30a-b6d9-465a-896e-fb7d4b805dd0" SourceId="1" SourceUrl="https://homologacao.imap.org.br/siam/Nfse.svc?xsd=xsd1" />
+    <MetadataFile FileName="Nfse42.xsd" MetadataType="Schema" ID="e25689c9-0c65-4d04-bc6e-9a11fa92e2a1" SourceId="1" SourceUrl="https://homologacao.imap.org.br/siam/Nfse.svc?xsd=xsd2" />
+    <MetadataFile FileName="Nfse43.xsd" MetadataType="Schema" ID="474d8a9e-6a20-4df4-8d31-98d704d84000" SourceId="1" SourceUrl="https://homologacao.imap.org.br/siam/Nfse.svc?xsd=xsd3" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

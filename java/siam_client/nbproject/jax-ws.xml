@@ -3,8 +3,8 @@
   <services/>
   <clients>
     <client name="nfse">
-      <wsdl-url>https://ws.imap.org.br/siam/nfse.svc?wsdl</wsdl-url>
-      <local-wsdl-file>ws.imap.org.br/siam/nfse.svc.wsdl</local-wsdl-file>
+      <wsdl-url>https://homologacao.imap.org.br/siam/nfse.svc?wsdl</wsdl-url>
+      <local-wsdl-file>homologacao.imap.org.br/siam/nfse.svc.wsdl</local-wsdl-file>
       <package-name forceReplace="true">siam_client</package-name>
       <catalog-file>catalog.xml</catalog-file>
       <wsimport-options>
@@ -22,7 +22,7 @@
         </wsimport-option>
         <wsimport-option>
           <wsimport-option-name>wsdlLocation</wsimport-option-name>
-          <wsimport-option-value>https://ws.imap.org.br/siam/nfse.svc?wsdl</wsimport-option-value>
+          <wsimport-option-value>https://homologacao.imap.org.br/siam/nfse.svc?wsdl</wsimport-option-value>
         </wsimport-option>
         <wsimport-option>
           <wsimport-option-name>xnocompile</wsimport-option-name>

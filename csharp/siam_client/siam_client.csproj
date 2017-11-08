@@ -49,7 +49,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\siam_service\Nfse1.wsdl" />
     <None Include="Service References\siam_service\Nfse4.xsd">
       <SubType>Designer</SubType>

@@ -27,19 +27,19 @@
   </wsp:Policy>
   <wsdl:types>
     <xsd:schema targetNamespace="http://tempuri.org/Imports">
-      <xsd:import schemaLocation="http://ws.imap.org.br/siam/Nfse.svc?xsd=xsd0" namespace="http://tempuri.org/" />
-      <xsd:import schemaLocation="http://ws.imap.org.br/siam/Nfse.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/NfseSvc" />
-      <xsd:import schemaLocation="http://ws.imap.org.br/siam/Nfse.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
-      <xsd:import schemaLocation="http://ws.imap.org.br/siam/Nfse.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+      <xsd:import schemaLocation="https://homologacao.imap.org.br/siam/Nfse.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="https://homologacao.imap.org.br/siam/Nfse.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/NfseSvc" />
+      <xsd:import schemaLocation="https://homologacao.imap.org.br/siam/Nfse.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://homologacao.imap.org.br/siam/Nfse.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
     </xsd:schema>
   </wsdl:types>
-  <wsdl:message name="INfse_EnviarLoteRpsSincronoEnvio_InputMessage">
-    <wsdl:part name="parameters" element="tns:EnviarLoteRpsSincronoEnvio" />
+  <wsdl:message name="INfse_CancelarNfseEnvio_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancelarNfseEnvio" />
   </wsdl:message>
-  <wsdl:message name="INfse_EnviarLoteRpsSincronoEnvio_OutputMessage">
-    <wsdl:part name="parameters" element="tns:EnviarLoteRpsSincronoEnvioResponse" />
+  <wsdl:message name="INfse_CancelarNfseEnvio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancelarNfseEnvioResponse" />
   </wsdl:message>
-  <wsdl:message name="INfse_EnviarLoteRpsSincronoEnvio_SiamFaultFault_FaultMessage">
+  <wsdl:message name="INfse_CancelarNfseEnvio_SiamFaultFault_FaultMessage">
     <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/NfseSvc" name="detail" element="q1:SiamFault" />
   </wsdl:message>
   <wsdl:message name="INfse_ConsultarLoteRpsEnvio_InputMessage">
@@ -51,6 +51,15 @@
   <wsdl:message name="INfse_ConsultarLoteRpsEnvio_SiamFaultFault_FaultMessage">
     <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/NfseSvc" name="detail" element="q2:SiamFault" />
   </wsdl:message>
+  <wsdl:message name="INfse_EnviarLoteRpsSincronoEnvio_InputMessage">
+    <wsdl:part name="parameters" element="tns:EnviarLoteRpsSincronoEnvio" />
+  </wsdl:message>
+  <wsdl:message name="INfse_EnviarLoteRpsSincronoEnvio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EnviarLoteRpsSincronoEnvioResponse" />
+  </wsdl:message>
+  <wsdl:message name="INfse_EnviarLoteRpsSincronoEnvio_SiamFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/NfseSvc" name="detail" element="q3:SiamFault" />
+  </wsdl:message>
   <wsdl:message name="INfse_ValidarXml_InputMessage">
     <wsdl:part name="parameters" element="tns:ValidarXml" />
   </wsdl:message>
@@ -58,69 +67,49 @@
     <wsdl:part name="parameters" element="tns:ValidarXmlResponse" />
   </wsdl:message>
   <wsdl:message name="INfse_ValidarXml_SiamFaultFault_FaultMessage">
-    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/NfseSvc" name="detail" element="q3:SiamFault" />
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/NfseSvc" name="detail" element="q4:SiamFault" />
+  </wsdl:message>
+  <wsdl:message name="INfse_ListarMotivoCancelamento_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarMotivoCancelamento" />
+  </wsdl:message>
+  <wsdl:message name="INfse_ListarMotivoCancelamento_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarMotivoCancelamentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="INfse_ListarMotivoCancelamento_SiamFaultFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/NfseSvc" name="detail" element="q5:SiamFault" />
   </wsdl:message>
   <wsdl:portType name="INfse">
-    <wsdl:operation name="EnviarLoteRpsSincronoEnvio">
-      <wsdl:input wsaw:Action="http://tempuri.org/INfse/EnviarLoteRpsSincronoEnvio" message="tns:INfse_EnviarLoteRpsSincronoEnvio_InputMessage" />
-      <wsdl:output wsaw:Action="http://tempuri.org/INfse/EnviarLoteRpsSincronoEnvioResponse" message="tns:INfse_EnviarLoteRpsSincronoEnvio_OutputMessage" />
-      <wsdl:fault wsaw:Action="http://tempuri.org/INfse/EnviarLoteRpsSincronoEnvioSiamFaultFault" name="SiamFaultFault" message="tns:INfse_EnviarLoteRpsSincronoEnvio_SiamFaultFault_FaultMessage" />
+    <wsdl:operation name="CancelarNfseEnvio">
+      <wsdl:input wsaw:Action="http://tempuri.org/INfse/CancelarNfseEnvio" message="tns:INfse_CancelarNfseEnvio_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INfse/CancelarNfseEnvioResponse" message="tns:INfse_CancelarNfseEnvio_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/INfse/CancelarNfseEnvioSiamFaultFault" name="SiamFaultFault" message="tns:INfse_CancelarNfseEnvio_SiamFaultFault_FaultMessage" />
     </wsdl:operation>
     <wsdl:operation name="ConsultarLoteRpsEnvio">
       <wsdl:input wsaw:Action="http://tempuri.org/INfse/ConsultarLoteRpsEnvio" message="tns:INfse_ConsultarLoteRpsEnvio_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/INfse/ConsultarLoteRpsEnvioResponse" message="tns:INfse_ConsultarLoteRpsEnvio_OutputMessage" />
       <wsdl:fault wsaw:Action="http://tempuri.org/INfse/ConsultarLoteRpsEnvioSiamFaultFault" name="SiamFaultFault" message="tns:INfse_ConsultarLoteRpsEnvio_SiamFaultFault_FaultMessage" />
     </wsdl:operation>
+    <wsdl:operation name="EnviarLoteRpsSincronoEnvio">
+      <wsdl:input wsaw:Action="http://tempuri.org/INfse/EnviarLoteRpsSincronoEnvio" message="tns:INfse_EnviarLoteRpsSincronoEnvio_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INfse/EnviarLoteRpsSincronoEnvioResponse" message="tns:INfse_EnviarLoteRpsSincronoEnvio_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/INfse/EnviarLoteRpsSincronoEnvioSiamFaultFault" name="SiamFaultFault" message="tns:INfse_EnviarLoteRpsSincronoEnvio_SiamFaultFault_FaultMessage" />
+    </wsdl:operation>
     <wsdl:operation name="ValidarXml">
       <wsdl:input wsaw:Action="http://tempuri.org/INfse/ValidarXml" message="tns:INfse_ValidarXml_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/INfse/ValidarXmlResponse" message="tns:INfse_ValidarXml_OutputMessage" />
       <wsdl:fault wsaw:Action="http://tempuri.org/INfse/ValidarXmlSiamFaultFault" name="SiamFaultFault" message="tns:INfse_ValidarXml_SiamFaultFault_FaultMessage" />
     </wsdl:operation>
+    <wsdl:operation name="ListarMotivoCancelamento">
+      <wsdl:input wsaw:Action="http://tempuri.org/INfse/ListarMotivoCancelamento" message="tns:INfse_ListarMotivoCancelamento_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INfse/ListarMotivoCancelamentoResponse" message="tns:INfse_ListarMotivoCancelamento_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/INfse/ListarMotivoCancelamentoSiamFaultFault" name="SiamFaultFault" message="tns:INfse_ListarMotivoCancelamento_SiamFaultFault_FaultMessage" />
+    </wsdl:operation>
   </wsdl:portType>
-  <wsdl:binding name="BasicHttpBinding_INfse" type="tns:INfse">
-    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="EnviarLoteRpsSincronoEnvio">
-      <soap:operation soapAction="http://tempuri.org/INfse/EnviarLoteRpsSincronoEnvio" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-      <wsdl:fault name="SiamFaultFault">
-        <soap:fault use="literal" name="SiamFaultFault" namespace="" />
-      </wsdl:fault>
-    </wsdl:operation>
-    <wsdl:operation name="ConsultarLoteRpsEnvio">
-      <soap:operation soapAction="http://tempuri.org/INfse/ConsultarLoteRpsEnvio" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-      <wsdl:fault name="SiamFaultFault">
-        <soap:fault use="literal" name="SiamFaultFault" namespace="" />
-      </wsdl:fault>
-    </wsdl:operation>
-    <wsdl:operation name="ValidarXml">
-      <soap:operation soapAction="http://tempuri.org/INfse/ValidarXml" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-      <wsdl:fault name="SiamFaultFault">
-        <soap:fault use="literal" name="SiamFaultFault" namespace="" />
-      </wsdl:fault>
-    </wsdl:operation>
-  </wsdl:binding>
   <wsdl:binding name="BasicHttpsBinding_INfse" type="tns:INfse">
     <wsp:PolicyReference URI="#BasicHttpsBinding_INfse_policy" />
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
-    <wsdl:operation name="EnviarLoteRpsSincronoEnvio">
-      <soap:operation soapAction="http://tempuri.org/INfse/EnviarLoteRpsSincronoEnvio" style="document" />
+    <wsdl:operation name="CancelarNfseEnvio">
+      <soap:operation soapAction="http://tempuri.org/INfse/CancelarNfseEnvio" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -143,8 +132,32 @@
         <soap:fault use="literal" name="SiamFaultFault" namespace="" />
       </wsdl:fault>
     </wsdl:operation>
+    <wsdl:operation name="EnviarLoteRpsSincronoEnvio">
+      <soap:operation soapAction="http://tempuri.org/INfse/EnviarLoteRpsSincronoEnvio" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SiamFaultFault">
+        <soap:fault use="literal" name="SiamFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
     <wsdl:operation name="ValidarXml">
       <soap:operation soapAction="http://tempuri.org/INfse/ValidarXml" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="SiamFaultFault">
+        <soap:fault use="literal" name="SiamFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ListarMotivoCancelamento">
+      <soap:operation soapAction="http://tempuri.org/INfse/ListarMotivoCancelamento" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -157,11 +170,8 @@
     </wsdl:operation>
   </wsdl:binding>
   <wsdl:service name="Nfse">
-    <wsdl:port name="BasicHttpBinding_INfse" binding="tns:BasicHttpBinding_INfse">
-      <soap:address location="http://ws.imap.org.br/siam/Nfse.svc" />
-    </wsdl:port>
     <wsdl:port name="BasicHttpsBinding_INfse" binding="tns:BasicHttpsBinding_INfse">
-      <soap:address location="https://ws.imap.org.br/siam/Nfse.svc" />
+      <soap:address location="https://homologacao.imap.org.br/siam/Nfse.svc" />
     </wsdl:port>
   </wsdl:service>
 </wsdl:definitions>

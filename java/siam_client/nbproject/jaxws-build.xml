@@ -18,8 +18,8 @@
     </target>
     <target name="wsimport-client-nfse" depends="wsimport-init">
         <mkdir dir="${build.generated.dir}/jax-wsCache/nfse"/>
-        <property name="wsdl-nfse" location="xml-resources/web-service-references/nfse/wsdl/ws.imap.org.br/siam/nfse.svc.wsdl"/>
-        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/nfse" destdir="${build.generated.dir}/jax-wsCache/nfse" wsdl="${wsdl-nfse}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="https://ws.imap.org.br/siam/nfse.svc?wsdl" xnocompile="true" xendorsed="true" package="siam_client">
+        <property name="wsdl-nfse" location="xml-resources/web-service-references/nfse/wsdl/homologacao.imap.org.br/siam/nfse.svc.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/nfse" destdir="${build.generated.dir}/jax-wsCache/nfse" wsdl="${wsdl-nfse}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="https://homologacao.imap.org.br/siam/nfse.svc?wsdl" xnocompile="true" xendorsed="true" package="siam_client">
             <depends file="${wsdl-nfse}"/>
             <produces dir="${build.generated.dir}/jax-wsCache/nfse"/>
         </wsimport>

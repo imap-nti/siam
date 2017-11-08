@@ -122,12 +122,12 @@ namespace siam_client.siam_service {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="siam_service.INfse")]
     public interface INfse {
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/INfse/EnviarLoteRpsSincronoEnvio", ReplyAction="http://tempuri.org/INfse/EnviarLoteRpsSincronoEnvioResponse")]
-        [System.ServiceModel.FaultContractAttribute(typeof(siam_client.siam_service.SiamFault), Action="http://tempuri.org/INfse/EnviarLoteRpsSincronoEnvioSiamFaultFault", Name="SiamFault", Namespace="http://schemas.datacontract.org/2004/07/NfseSvc")]
-        siam_client.siam_service.XMLMessage EnviarLoteRpsSincronoEnvio(string param);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/INfse/CancelarNfseEnvio", ReplyAction="http://tempuri.org/INfse/CancelarNfseEnvioResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(siam_client.siam_service.SiamFault), Action="http://tempuri.org/INfse/CancelarNfseEnvioSiamFaultFault", Name="SiamFault", Namespace="http://schemas.datacontract.org/2004/07/NfseSvc")]
+        siam_client.siam_service.XMLMessage CancelarNfseEnvio(string param);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/INfse/EnviarLoteRpsSincronoEnvio", ReplyAction="http://tempuri.org/INfse/EnviarLoteRpsSincronoEnvioResponse")]
-        System.Threading.Tasks.Task<siam_client.siam_service.XMLMessage> EnviarLoteRpsSincronoEnvioAsync(string param);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/INfse/CancelarNfseEnvio", ReplyAction="http://tempuri.org/INfse/CancelarNfseEnvioResponse")]
+        System.Threading.Tasks.Task<siam_client.siam_service.XMLMessage> CancelarNfseEnvioAsync(string param);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/INfse/ConsultarLoteRpsEnvio", ReplyAction="http://tempuri.org/INfse/ConsultarLoteRpsEnvioResponse")]
         [System.ServiceModel.FaultContractAttribute(typeof(siam_client.siam_service.SiamFault), Action="http://tempuri.org/INfse/ConsultarLoteRpsEnvioSiamFaultFault", Name="SiamFault", Namespace="http://schemas.datacontract.org/2004/07/NfseSvc")]
@@ -136,12 +136,26 @@ namespace siam_client.siam_service {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/INfse/ConsultarLoteRpsEnvio", ReplyAction="http://tempuri.org/INfse/ConsultarLoteRpsEnvioResponse")]
         System.Threading.Tasks.Task<siam_client.siam_service.XMLMessage> ConsultarLoteRpsEnvioAsync(string param);
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/INfse/EnviarLoteRpsSincronoEnvio", ReplyAction="http://tempuri.org/INfse/EnviarLoteRpsSincronoEnvioResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(siam_client.siam_service.SiamFault), Action="http://tempuri.org/INfse/EnviarLoteRpsSincronoEnvioSiamFaultFault", Name="SiamFault", Namespace="http://schemas.datacontract.org/2004/07/NfseSvc")]
+        siam_client.siam_service.XMLMessage EnviarLoteRpsSincronoEnvio(string param);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/INfse/EnviarLoteRpsSincronoEnvio", ReplyAction="http://tempuri.org/INfse/EnviarLoteRpsSincronoEnvioResponse")]
+        System.Threading.Tasks.Task<siam_client.siam_service.XMLMessage> EnviarLoteRpsSincronoEnvioAsync(string param);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/INfse/ValidarXml", ReplyAction="http://tempuri.org/INfse/ValidarXmlResponse")]
         [System.ServiceModel.FaultContractAttribute(typeof(siam_client.siam_service.SiamFault), Action="http://tempuri.org/INfse/ValidarXmlSiamFaultFault", Name="SiamFault", Namespace="http://schemas.datacontract.org/2004/07/NfseSvc")]
         siam_client.siam_service.XMLMessage ValidarXml(string param);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/INfse/ValidarXml", ReplyAction="http://tempuri.org/INfse/ValidarXmlResponse")]
         System.Threading.Tasks.Task<siam_client.siam_service.XMLMessage> ValidarXmlAsync(string param);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/INfse/ListarMotivoCancelamento", ReplyAction="http://tempuri.org/INfse/ListarMotivoCancelamentoResponse")]
+        [System.ServiceModel.FaultContractAttribute(typeof(siam_client.siam_service.SiamFault), Action="http://tempuri.org/INfse/ListarMotivoCancelamentoSiamFaultFault", Name="SiamFault", Namespace="http://schemas.datacontract.org/2004/07/NfseSvc")]
+        string ListarMotivoCancelamento(string CpjCnpj, bool json);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/INfse/ListarMotivoCancelamento", ReplyAction="http://tempuri.org/INfse/ListarMotivoCancelamentoResponse")]
+        System.Threading.Tasks.Task<string> ListarMotivoCancelamentoAsync(string CpjCnpj, bool json);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -171,12 +185,12 @@ namespace siam_client.siam_service {
                 base(binding, remoteAddress) {
         }
         
-        public siam_client.siam_service.XMLMessage EnviarLoteRpsSincronoEnvio(string param) {
-            return base.Channel.EnviarLoteRpsSincronoEnvio(param);
+        public siam_client.siam_service.XMLMessage CancelarNfseEnvio(string param) {
+            return base.Channel.CancelarNfseEnvio(param);
         }
         
-        public System.Threading.Tasks.Task<siam_client.siam_service.XMLMessage> EnviarLoteRpsSincronoEnvioAsync(string param) {
-            return base.Channel.EnviarLoteRpsSincronoEnvioAsync(param);
+        public System.Threading.Tasks.Task<siam_client.siam_service.XMLMessage> CancelarNfseEnvioAsync(string param) {
+            return base.Channel.CancelarNfseEnvioAsync(param);
         }
         
         public siam_client.siam_service.XMLMessage ConsultarLoteRpsEnvio(string param) {
@@ -187,12 +201,28 @@ namespace siam_client.siam_service {
             return base.Channel.ConsultarLoteRpsEnvioAsync(param);
         }
         
+        public siam_client.siam_service.XMLMessage EnviarLoteRpsSincronoEnvio(string param) {
+            return base.Channel.EnviarLoteRpsSincronoEnvio(param);
+        }
+        
+        public System.Threading.Tasks.Task<siam_client.siam_service.XMLMessage> EnviarLoteRpsSincronoEnvioAsync(string param) {
+            return base.Channel.EnviarLoteRpsSincronoEnvioAsync(param);
+        }
+        
         public siam_client.siam_service.XMLMessage ValidarXml(string param) {
             return base.Channel.ValidarXml(param);
         }
         
         public System.Threading.Tasks.Task<siam_client.siam_service.XMLMessage> ValidarXmlAsync(string param) {
             return base.Channel.ValidarXmlAsync(param);
+        }
+        
+        public string ListarMotivoCancelamento(string CpjCnpj, bool json) {
+            return base.Channel.ListarMotivoCancelamento(CpjCnpj, json);
+        }
+        
+        public System.Threading.Tasks.Task<string> ListarMotivoCancelamentoAsync(string CpjCnpj, bool json) {
+            return base.Channel.ListarMotivoCancelamentoAsync(CpjCnpj, json);
         }
     }
 }

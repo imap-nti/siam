@@ -27,11 +27,11 @@ public class Siam_client {
 
             /* iniciando trustStore https://docs.microsoft.com/en-us/azure/java-add-certificate-ca-store */
             System.setProperty("javax.net.ssl.trustStore", "C:\\caminho_para_minha_trustStore\\cacerts");
-            System.setProperty("javax.net.ssl.trustStorePassword", "password");
+            System.setProperty("javax.net.ssl.trustStorePassword", "changeit");
 
             /* iniciando keyStore */
             System.setProperty("javax.net.ssl.keyStore", "C:\\caminho_para_minha_keyStore\\certificado.pfx"); // ou ..\\certificado.p12
-            System.setProperty("javax.net.ssl.keyStorePassword", "password");
+            System.setProperty("javax.net.ssl.keyStorePassword", "10203055");
 
             /* lendo RPS para o envio... */
             String fileText = readAllText("C:\\caminho_para_meu_rps\\rps.xml");
@@ -39,10 +39,12 @@ public class Siam_client {
             Nfse client = new Nfse();
             INfse iNfse = client.getBasicHttpsBindingINfse();
 
-            XMLMessage message = iNfse.validarXml(fileText); //<--  Validar RPS
-            //XMLMessage message = iNfse.enviarLoteRpsSincronoEnvio(fileText); <--  Enviar RPS
-            //XMLMessage message = iNfse.consultarLoteRpsEnvio(fileText); <-- Consultar RPS
-
+            XMLMessage message = iNfse.validarXml(fileText); //<--  Validar XML
+            
+            //XMLMessage message = iNfse.enviarLoteRpsSincronoEnvio(fileText); <-- Enviar RPS
+            //XMLMessage message = iNfse.consultarLoteRpsEnvio(fileText); <-- Consultar NFSE
+            //XMLMessage message = iNfse.cancelarNfseEnvio(fileText); //<-- Cancelar NFSE
+            
             System.out.println(message.getXmlString());
         } catch (IOException | INfseValidarXmlSiamFaultFaultFaultMessage ex) {
             Logger.getLogger(Siam_client.class.getName()).log(Level.SEVERE, null, ex);
