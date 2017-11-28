@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
-<CancelarNfseEnvio xmlns="https://ws.imap.org.br/siam/nfse.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-	<Pedido>
-		<InfPedidoCancelamento Id="Cancelamento_201301">
-			<IdentificacaoNfse>
-				<Numero>2013000</Numero>
-				<CpfCnpj>
-					<Cnpj>00000000000000</Cnpj>
-				</CpfCnpj>
-				<InscricaoMunicipal>17</InscricaoMunicipal>
-				<CodigoMunicipio>99999</CodigoMunicipio>
-			</IdentificacaoNfse>
-			<CodigoCancelamento>1</CodigoCancelamento>
-      <MotivoCancelamento>Motivo de cancelamento</MotivoCancelamento>
-		</InfPedidoCancelamento>
-	</Pedido>
+<?xml version="1.0" encoding="UTF-8"?>
+<CancelarNfseEnvio xmlns="https://ws.imap.org.br/siam/nfse.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <Pedido>
+      <InfPedidoCancelamento Id="Cancelamento_201301">
+         <IdentificacaoNfse>
+            <Numero>2013000</Numero>
+            <CpfCnpj>
+               <Cnpj>00000000000000</Cnpj>
+            </CpfCnpj>
+            <InscricaoMunicipal>17</InscricaoMunicipal>
+            <CodigoMunicipio>99999</CodigoMunicipio>
+         </IdentificacaoNfse>
+         <CodigoCancelamento>1</CodigoCancelamento>
+         <MotivoCancelamento>Motivo de cancelamento</MotivoCancelamento>
+      </InfPedidoCancelamento>
+   </Pedido>
 </CancelarNfseEnvio>
