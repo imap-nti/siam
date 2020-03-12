@@ -15,6 +15,8 @@
 				</li>
 			</ul>
 		</li>
-		<li>Exemplo para manipulação de sua truststore. <a href="https://github.com/imap-nti/siam/wiki/">Saiba mais.</a></li>
+		<li>Exemplo para manipulação de sua truststore. <a href="https://github.com/imap-nti/siam/wiki/manipulando-as-entradas-em-sua-truststore">Saiba mais.</a></li>
 	</ul>
+	
+	
 </section>
