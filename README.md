@@ -28,7 +28,7 @@
 		<li><a href="https://github.com/imap-nti/siam/wiki/">Wiki.</a></li>
 	</ul>
 </section>
-<hr />
+
 
 # SIAM iss-api
 
