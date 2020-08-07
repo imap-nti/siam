@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Consulta xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <cnpj_prefeitura>05277208000176</cnpj_prefeitura>
+  <pediodo_inicio>202004</pediodo_inicio>
+  <pediodo_fim>202005</pediodo_fim>
+  <radical>05277208</radical>
+  <cnpj_dependencia>05277208000176</cnpj_dependencia>
+  <situacao>700000.09</situacao>
+</Consulta>

@@ -1,0 +1,45 @@
+<?xml version="1,0" encoding="UTF-8"?>
+<ArrayOfLancamentoISS xmlns:xsd="http://www,w3,org/2001/XMLSchema" xmlns:xsi="http://www,w3,org/2001/XMLSchema-instance">
+   <LancamentoISS>
+      <cnpj_dependencia>05277208000176</cnpj_dependencia>
+      <competencia>202004</competencia>
+      <base_de_calculo>229001,14</base_de_calculo>
+      <aliquota>1,01</aliquota>
+      <valor_iss>700000,09</valor_iss>
+   </LancamentoISS>
+   <LancamentoISS>
+      <cnpj_dependencia>05277208000176</cnpj_dependencia>
+      <competencia>202004</competencia>
+      <base_de_calculo>9001,14</base_de_calculo>
+      <aliquota>5,02</aliquota>
+      <valor_iss>700000,09</valor_iss>
+   </LancamentoISS>
+   <LancamentoISS>
+      <cnpj_dependencia>05277208000176</cnpj_dependencia>
+      <competencia>202004</competencia>
+      <base_de_calculo>2290,04</base_de_calculo>
+      <aliquota>215,03</aliquota>
+      <valor_iss>700000,09</valor_iss>
+   </LancamentoISS>
+   <LancamentoISS>
+      <cnpj_dependencia>05277208000176</cnpj_dependencia>
+      <competencia>202004</competencia>
+      <base_de_calculo>2291,14</base_de_calculo>
+      <aliquota>25,04</aliquota>
+      <valor_iss>700000,09</valor_iss>
+   </LancamentoISS>
+   <LancamentoISS>
+      <cnpj_dependencia>05277208000176</cnpj_dependencia>
+      <competencia>202004</competencia>
+      <base_de_calculo>22,90</base_de_calculo>
+      <aliquota>15,05</aliquota>
+      <valor_iss>700000,09</valor_iss>
+   </LancamentoISS>
+   <LancamentoISS>
+      <cnpj_dependencia>05277208000176</cnpj_dependencia>
+      <competencia>202004</competencia>
+      <base_de_calculo>22,90</base_de_calculo>
+      <aliquota>15,06</aliquota>
+      <valor_iss>700000,09</valor_iss>
+   </LancamentoISS>
+</ArrayOfLancamentoISS>
