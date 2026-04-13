@@ -21,4 +21,4 @@ jobs:
         server: 168.75.73.180
         username: imap
         password: ${{ secrets.FTP_ORACLE9_PASSWORD }}
-        server-dir: /var/www/sample/
+        server-dir: /
